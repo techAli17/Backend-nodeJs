@@ -26,4 +26,4 @@ const uploadOnCloudDb = async (file) => {
   }
 };
 
-export default uploadOnCloudDb;
+export { uploadOnCloudDb };
