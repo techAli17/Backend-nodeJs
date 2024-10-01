@@ -31,20 +31,11 @@ const UserSchema = new Schema(
     },
     coverImage: {
       type: String,
-      required: true,
     },
     watchHistory: {
       type: [Schema.Types.ObjectId],
       ref: "Video",
       default: [],
-    },
-
-    phoneNumber: {
-      type: Number,
-      required: true,
-      unique: true,
-      min: [10, "Phone number should be 10 digits"],
-      max: [10, "Phone number should be 10 digits"],
     },
     password: {
       type: String,
